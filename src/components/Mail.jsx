@@ -20,7 +20,7 @@ const Mail = () => {
       <div className='flex items-center justify-between px-4'>
         <div className='flex items-center gap-2 text-gray-700 py-2'>
           <div className='p-2 rounded-full hover:bg-gray-100 cursor-pointer'>
-            <IoMdArrowBack onClick={()=>navigate("/")} size={"20px"} />
+            <IoMdArrowBack onClick={() => navigate("/")} size={"20px"} />
           </div>
           <div className='p-2 rounded-full hover:bg-gray-100 cursor-pointer'>
             <BiArchiveIn size={"20px"} />
@@ -47,10 +47,10 @@ const Mail = () => {
             <IoMdMore size={"20px"} />
           </div>
         </div>
-          <div className='flex items-center gap-2'>
-            <button className='hover:rounded-full hover:bg-gray-100 '><MdKeyboardArrowLeft size={"24px"} /></button>
-            <button className='hover:rounded-full hover:bg-gray-100 '><MdKeyboardArrowRight size={"24px"} /></button>
-          </div>
+        <div className='flex items-center gap-2'>
+          <button className='hover:rounded-full hover:bg-gray-100 '><MdKeyboardArrowLeft size={"24px"} /></button>
+          <button className='hover:rounded-full hover:bg-gray-100 '><MdKeyboardArrowRight size={"24px"} /></button>
+        </div>
       </div>
       <div className='h-[90vh] overflow-y-auto p-4'>
         <div className='flex items-center justify-between bg-white gap-1'>
@@ -63,8 +63,8 @@ const Mail = () => {
           </div>
         </div>
         <div className='text-gray-500 text-sm'>
-<h1>rafique@gmail.com</h1>
-<span>to me</span>
+          <h1>rafique@gmail.com</h1>
+          <span>to me</span>
         </div>
         <div className='my-10'>
           <p>message</p>
