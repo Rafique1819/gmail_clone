@@ -1,12 +1,12 @@
 import React from 'react'
 import { MdCropSquare } from "react-icons/md";
 import { RiStarLine } from "react-icons/ri";
-import {useNavigate} from "react-router-dom";
+import {data, useNavigate} from "react-router-dom";
 
-const Message = () => {
+const Message = ({email}) => {
 const navigate = useNavigate();
 const OpenMail=()=>{
-navigate("/mail/1123334")
+navigate(`/mail/${email}`)
 }
 
     return (
@@ -20,10 +20,10 @@ navigate("/mail/1123334")
                 </div>
             </div>
             <div className='flex-1 ml-4'>
-                <p className='text-gray-600 truncate inline-block max-w-full'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi saepe sequi voluptatem.</p>
+                <p className='text-gray-600 truncate inline-block max-w-full'>{email?.message}</p>
             </div>
             <div className='text-gray-400 flex-none text-sm'>
-                Time aayega
+               <p>{new Date(email?.createdAt?.seconds*1000).toUTCString()}</p>
             </div>
         </div>
     )
